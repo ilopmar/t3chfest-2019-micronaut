@@ -45,6 +45,9 @@ dependencies {
     runtime 'io.zipkin.reporter2:zipkin-reporter'
     compile 'io.opentracing.brave:brave-opentracing'
 
+    compileOnly "com.oracle.substratevm:svm"
+    runtime "io.micronaut:micronaut-graal"
+
     testAnnotationProcessor "io.micronaut:micronaut-inject-java"
     testCompile "org.junit.jupiter:junit-jupiter-api"
     testCompile "io.micronaut.test:micronaut-test-junit5"
