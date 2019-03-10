@@ -40,6 +40,11 @@ dependencies {
 
     compile "io.micronaut:micronaut-discovery-client"
 
+    compile 'io.micronaut:micronaut-tracing'
+    runtime 'io.zipkin.brave:brave-instrumentation-http'
+    runtime 'io.zipkin.reporter2:zipkin-reporter'
+    compile 'io.opentracing.brave:brave-opentracing'
+
     testAnnotationProcessor "io.micronaut:micronaut-inject-java"
     testCompile "org.junit.jupiter:junit-jupiter-api"
     testCompile "io.micronaut.test:micronaut-test-junit5"

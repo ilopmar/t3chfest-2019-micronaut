@@ -36,6 +36,12 @@ dependencies {
     compile "io.micronaut:micronaut-inject"
     compile "io.micronaut:micronaut-validation"
     compile "io.micronaut:micronaut-runtime"
+
+    compile 'io.micronaut:micronaut-tracing'
+    runtime 'io.zipkin.brave:brave-instrumentation-http'
+    runtime 'io.zipkin.reporter2:zipkin-reporter'
+    compile 'io.opentracing.brave:brave-opentracing'
+
     runtime "ch.qos.logback:logback-classic:1.2.3"
     testAnnotationProcessor "io.micronaut:micronaut-inject-java"
     testCompile "org.junit.jupiter:junit-jupiter-api"
