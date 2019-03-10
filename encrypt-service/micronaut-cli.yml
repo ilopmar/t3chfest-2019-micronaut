@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: encrypt.service
+---
+testFramework: spock
+sourceLanguage: java

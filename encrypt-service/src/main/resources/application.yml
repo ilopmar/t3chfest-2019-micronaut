@@ -1,0 +1,5 @@
+micronaut:
+    application:
+        name: encrypt-service
+jackson:
+    module-scan: false
