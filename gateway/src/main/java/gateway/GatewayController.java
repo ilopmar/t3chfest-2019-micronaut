@@ -5,7 +5,7 @@ import io.micronaut.http.annotation.Get;
 import io.reactivex.Single;
 
 @Controller("/api/${api.version:v1}")
-public class GatewayController {
+public class GatewayController implements EncryptOperations {
 
     private final EncryptClient encryptClient;
 
