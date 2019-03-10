@@ -37,6 +37,9 @@ dependencies {
     compile "io.micronaut:micronaut-validation"
     compile "io.micronaut:micronaut-runtime"
     runtime "ch.qos.logback:logback-classic:1.2.3"
+
+    compile "io.micronaut:micronaut-discovery-client"
+
     testAnnotationProcessor "io.micronaut:micronaut-inject-java"
     testCompile "org.junit.jupiter:junit-jupiter-api"
     testCompile "io.micronaut.test:micronaut-test-junit5"

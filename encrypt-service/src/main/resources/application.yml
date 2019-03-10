@@ -3,3 +3,10 @@ micronaut:
         name: encrypt-service
 jackson:
     module-scan: false
+
+---
+consul:
+    client:
+        registration:
+              enabled: true
+        defaultZone: "${CONSUL_HOST:localhost}:${CONSUL_PORT:8500}"
